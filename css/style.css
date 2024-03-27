@@ -1,0 +1,212 @@
+*{
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+header{
+    background: black;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+nav{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 65px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+nav ul li a{
+    font-family: 'calibri';
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: violet;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.5s;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+/*Seccion contenido*/
+
+#inicio .contenido .presentacion{
+    background-image: url(/img/fonesp.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#inicio .contenido .presentacion .bienvenido{
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#inicio .contenido .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#inicio .contenido .presentacion h2 span{
+    font-size: 25px;
+    color: rgb(220, 21, 220);
+}
+/*Seccion Creador Novela*/
+#creador{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+#creador .contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+#creador .contenedor-foto img{
+    padding: 20px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: #ded6d6;
+}
+#creador .creador{
+    margin: 0 40px;
+}
+#creador .creador h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+#creador .creador h2 span{
+    color: rgb(191, 90, 191);
+}
+#creador .creador h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#creador .creador p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+#creador .creador span{
+    color:rgb(191, 90, 191);
+}
+/*Seccion Factores*/
+#historia{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+
+}
+#historia .contenedor-foto {
+    max-width: 500px;
+    margin-right: 80px;
+}
+#historia .contenedor-foto iframe{
+    width: 550px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+#historia .contenedor-foto img{
+    width: 550px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+#historia .historia{
+    margin: 0 40px;
+}
+#historia .historia .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#historia .historia h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+#historia .historia h2 span{
+    color: rgb(172, 35, 172);
+}
+#historia .historia h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#historia .historia p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+#historia .historia p span{
+    color: rgb(172, 35, 172);
+} 
+/*Seccion pensadores*/
+.galeria{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.galeria h2{
+    text-align: center;
+    font-size: 35px;
+}
+.galeri{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+.galeri > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.galeri > div:hover{
+    flex: 5;
+}
+
+/*Seccion Footer Bibliografia*/
+footer{
+   margin-left: 60px; 
+}
